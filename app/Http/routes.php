@@ -12,10 +12,13 @@
 */
 
 Route::get('/', 'WelcomeController@index');
-Route::get('/index', 'WelcomeController@index');
-Route::get('/contact', 'WelcomeController@contact');
-Route::post('/contact','WelcomeController@contact');
 Route::get('home', 'HomeController@index');
+Route::get('about','HomeController@about');
+Route::get('service','HomeController@service');
+Route::get('whyus','HomeController@whyus');
+Route::get('howitwork','HomeController@howitwork');
+Route::get('faq','HomeController@faq');
+Route::get('contact','HomeController@contact');
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

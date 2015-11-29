@@ -23,7 +23,7 @@
   <body>
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+        <a class="navbar-brand" href="#"><img src="{{ url('img/logo.png') }}"></a>
         <div class="pull-right">
           <a class="navbar-brand" href="myaccount.php">
             <button type="button" class="btn btn-sm">My Account</button>
@@ -43,19 +43,19 @@
         </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-              <li class="text-center"> <a href="index.php">HOME</a></li>
-              <li class="text-center"> <a href="about.php">ABOUT US</a></li>
-              <li class="text-center"> <a href="services.php">SERVICES</a></li>
-              <li class="text-center"> <a href="whyus.php">WHY US</a></li>
-              <li class="text-center"> <a href="howitworks.php">HOW IT WORKS</a></li>
-              <li class="text-center"> <a href="faq.php">FAQ</a></li>
-              <li class="text-center"> <a href="contact.php">CONTACT</a></li>
+              <li class="text-center"> <a href="{{url('')}}">HOME</a></li>
+              <li class="text-center"> <a href="{{url('about')}}">ABOUT US</a></li>
+              <li class="text-center"> <a href="{{url('service')}}">SERVICES</a></li>
+              <li class="text-center"> <a href="{{url('whyus')}}">WHY US</a></li>
+              <li class="text-center"> <a href="{{url('howitwork')}}">HOW IT WORKS</a></li>
+              <li class="text-center"> <a href="{{url('faq')}}">FAQ</a></li>
+              <li class="text-center"> <a href="{{url('contact')}}">CONTACT</a></li>
               <li class="text-center">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE<span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li class="text-center"> <a href="#">ORDER</a></li>
                     <li role="separator" class="divider"></li>
-                    <li class="text-center"> <a href="price.php">PRICE</a></li>
+                    <li class="text-center"> <a href="">PRICE</a></li>
                   </ul>
               </li>
             </ul>
