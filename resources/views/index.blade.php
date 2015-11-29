@@ -23,7 +23,7 @@
   <body>
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="{{ url('img/logo.png') }}"></a>
+        <a class="navbar-brand" href="#"><img src="{{ url('img/logo4.png') }}"></a>
         <div class="pull-right">
           <a class="navbar-brand" href="myaccount.php">
             <button type="button" class="btn btn-sm">My Account</button>
